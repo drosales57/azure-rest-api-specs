@@ -4,7 +4,7 @@ These settings apply only when `--go` is specified on the command line.
 
 ``` yaml $(go)
 go:
-  license-header: MICROSOFT_APACHE_NO_VERSION
+  license-header: MICROSOFT_MIT_NO_VERSION
   clear-output-folder: true
 ```
 
@@ -12,6 +12,7 @@ go:
 
 ``` yaml $(go) && $(multiapi)
 batch:
+  - tag: package-access-control-2020-08-01-preview
   - tag: package-spark-2019-11-01-preview
   - tag: package-artifacts-2019-06-01-preview
   - tag: package-access-control-2020-02-01-preview
